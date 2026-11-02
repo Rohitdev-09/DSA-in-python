@@ -11,6 +11,7 @@ for ch in value :
     dict[ch] = count
 print(dict)
 
+
 # Hashing using Frequency Array    (t.c = O(n + m)) 
 dict = [0]*26
 for ch in string :
@@ -31,3 +32,4 @@ for ch in string :
         dict[ch] = 1
 for ch in value :
     print(dict.get(ch,0))
+
