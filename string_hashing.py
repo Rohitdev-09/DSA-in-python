@@ -10,8 +10,7 @@ for ch in value :
             count += 1
     dict[ch] = count
 print(dict)
-
-
+  
 # Hashing using Frequency Array    (t.c = O(n + m)) 
 dict = [0]*26
 for ch in string :
