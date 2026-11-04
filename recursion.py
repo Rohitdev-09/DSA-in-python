@@ -29,3 +29,10 @@ def fun4(x,n) :
     print(x)
 fun4(1,10)
 
+# 1-n tail recursion
+def fun5(n) :
+    if n == 0 :
+        return
+    fun5(n-1)
+    print(n)
+fun5(10)
