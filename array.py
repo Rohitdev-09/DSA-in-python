@@ -1,4 +1,4 @@
-arr = [9,1,8,2,7,3,6,4,5,0]
+arr = [0,1,2,3,4,5,6,7,8,9]
 rev = []
 
 # reverse of an array from index 0-n
@@ -17,7 +17,7 @@ for i in range (5,len(arr)) :
 print(rev)
 
 # reverse of an array from index 0-n by recursion
-num = [9,1,8,2,7,3,6,4,5,0]
+num = [0,1,2,3,4,5,6,7,8,9]
 def reverse(num, left, right) :
     if left >= right :
         return
