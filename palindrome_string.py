@@ -13,7 +13,6 @@ else :
     print("it is not a plaindrome")
 
 
-
 def fun(string, left, right) :
     if left >= right :
         return "it is plaindrome"
@@ -24,3 +23,15 @@ def fun(string, left, right) :
     return fun(string, left+1, right-1)
 
 print(fun(string, 0, len(string)-1))
+
+def fun1(string) :
+    left = 0
+    right = len(string)-1
+    while left<right :
+        if string[left] != string[right] :
+            return "it is not a plaindrome"
+        left += 1
+        right -= 1 
+    return "it is plaindrome"  
+
+print(fun1(string))
