@@ -1,3 +1,4 @@
+# checking a plaindrome no.   -> Brute method
 string = "nitin"
 test1 = []
 test2 = []
@@ -13,17 +14,18 @@ else :
     print("it is not a plaindrome")
 
 
+# checking a plaindrome no.   -> Recursion method
 def fun(string, left, right) :
     if left >= right :
         return "it is plaindrome"
-    asci1 = ord(string[left]) - 97
-    asci2 = ord(string[right]) - 97
-    if asci1 != asci2 :
+    if string[left] != string[right] :
         return "it is not a plaindrome"
     return fun(string, left+1, right-1)
 
 print(fun(string, 0, len(string)-1))
 
+
+# checking a plaindrome no.   -> while loop method
 def fun1(string) :
     left = 0
     right = len(string)-1
