@@ -1,7 +1,7 @@
 num = [1,3,5,7,9,2,4,6,8,0]
 
 # Increasing order
-for i in range (1,len(num)) :
+for i in range (len(num)) :  
     for j in range (len(num)-1) :
         if num[j] > num[j+1] :
             num[j], num[j+1] = num[j+1], num[j]
