@@ -1,9 +1,9 @@
 num = [1,3,5,7,9,2,4,6,8,0]
 
-num1 = [1,3,5,7,9]
+# Merging technique
 
+num1 = [1,3,5,7,9]
 num2 = [2,4,6,8,0]
-# Merging   technique
 result = []
 def fun(i) :
     for i in range (len(num1)) :
@@ -17,7 +17,5 @@ def fun(i) :
     else :
         result.append(r1)
     fun(i+1)
-
 fun(0)
-
 print(result)
